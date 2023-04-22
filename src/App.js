@@ -1,14 +1,17 @@
-// import React from 'react';
 import React, {useState} from 'react';
 
-import './App.css';
+import Header from './component/Header/Header';
+import KeyPad from './component/KeyPad/KeyPad';
+
 import moonIcon from './assets/moon.png'
 import sunIcon from './assets/sun.png'
+
+import './App.css';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   return (
-    <div className="app">
+    <div className="app" data-theme={isDarkMode ? "dark" : ""}>
       <div className="app_calculator">
         <div className="app_calculator_navbar">
           <div className="app_calculator_navbar_toggle" onClick ={()=>setIsDarkMode(!isDarkMode)}>
@@ -17,6 +20,10 @@ function App() {
           </div>
           <img src={isDarkMode ? moonIcon : sunIcon} alt="mode" />
         </div>
+
+        <Header/>
+        <KeyPad/>
+        
       </div>
     </div>
   );
