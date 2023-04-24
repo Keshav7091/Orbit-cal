@@ -41,8 +41,8 @@
 .app_calculator{
     height: 500px;
     width: 280px;
-    border-radius: 15px;
-    border: 2px rgb(39, 102, 191) solid;
+    border-radius: 30px;
+    border: 2px #7e95b6 solid;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -64,15 +64,16 @@
 }
 
 .app_calculator_navbar img{
-    height: 24px;
-    width: 24px;
+    height: 22px;
+    width: 22px;
+    border-radius: 12px;
 }
 
 .app_calculator_navbar_toggle{
     height: 15px;
     width: 30px;
     border-radius: 20px;
-    background-color: red;
+    background-color: black;
 }
 
 .app_calculator_navbar_toggle_circle{
